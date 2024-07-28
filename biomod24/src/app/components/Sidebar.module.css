@@ -1,0 +1,78 @@
+/* src/app/components/Sidebar.module.css */
+
+.sidebarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 95%;
+    width: 50px;
+    background: var(--sidebar-bg);
+    transition: width 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    margin: 20px;
+    border-radius: 10px;
+    background: radial-gradient(circle, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    padding: 20px;
+    box-shadow: 5px 5px 15px var(--box-shadow-color);
+    margin-bottom: 40px;
+  }
+  
+  .sidebarContainer:hover {
+    width: 200px;
+  }
+  
+  .menuIcon {
+    margin: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--sidebar-color);
+  }
+  
+  .menuItems {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  
+  .menuItem {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--sidebar-color);
+    cursor: pointer;
+    justify-content: center;
+    transition: justify-content 0.3s;
+  }
+  
+  .menuItem:hover {
+    background: var(--menu-item-hover);
+    color: var(--sidebar-bg);
+  }
+  
+  .sidebarContainer:hover .menuItem {
+    justify-content: flex-start;
+  }
+  
+  .menuItem span {
+    display: none;
+    margin-left: 10px;
+  }
+  
+  .sidebarContainer:hover .menuItem span {
+    display: inline;
+  }
+  
+  .footer {
+    font-size: 10px;
+    padding: 20px;
+    color: var(--footer-color);
+  }
+  
