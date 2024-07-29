@@ -3,7 +3,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { FaBars, FaYoutube, FaSun, FaMoon, FaRobot } from 'react-icons/fa';
+import { FaBars, FaYoutube, FaSun, FaMoon, FaRobot, FaDoorOpen } from 'react-icons/fa';
 import styles from './Sidebar.module.css';
 
 const Sidebar = () => {
@@ -32,7 +32,7 @@ const Sidebar = () => {
           <span><h2>Cargo Sorting Robot</h2></span>
         </div>
         <div className={styles.menuItem}>
-          <FaRobot />
+          <FaDoorOpen />
           <span>Welcome</span>
         </div>
         <div className={styles.menuItem}>

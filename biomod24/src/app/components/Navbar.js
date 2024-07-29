@@ -12,12 +12,12 @@ const Navbar = () => {
         <FaAngleLeft className={styles.hideIcon} />
       </div>
       <div className={styles.navItems}>
-        <Link href="/"><div className={styles.navItem}>Home</div></Link>
-        <Link href="/introduction"><div className={styles.navItem}>Introduction</div></Link>
-        <Link href="/project"><div className={styles.navItem}>Project</div></Link>
-        <Link href="/experiments"><div className={styles.navItem}>Experiments</div></Link>
-        <Link href="/results"><div className={styles.navItem}>Results</div></Link>
-        <Link href="/team"><div className={styles.navItem}>Team</div></Link>
+        <Link href="/" className={styles.navItem} >Home</Link>
+        <Link href="/introduction" className={styles.navItem}>Introduction</Link>
+        <Link href="/project" className={styles.navItem}>Project</Link>
+        <Link href="/experiments" className={styles.navItem}>Experiments</Link>
+        <Link href="/results" className={styles.navItem}>Results</Link>
+        <Link href="/team" className={styles.navItem}>Team</Link>
       </div>
     </div>
   );

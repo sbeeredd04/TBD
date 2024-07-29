@@ -93,3 +93,6 @@
     background-color: var(--sidebar-bg);
   }
   
+  .themeToggle {
+    padding: 10% 40%;
+  }
