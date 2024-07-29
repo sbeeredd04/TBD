@@ -4,23 +4,27 @@
   --sidebar-bg: #ffffff;
   --sidebar-color: #000000;
   --menu-item-hover: #e0e0e0;
-  --bg-gradient-start: rgba(63, 94, 251, 1);
-  --bg-gradient-end: rgba(252, 70, 107, 1);
-  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --bg-gradient-start: rgb(0, 0, 0);
+  --bg-gradient-end: rgb(80, 80, 80);
+  --box-shadow-color: rgba(80, 80, 80, 0.2);
   --footer-color: #000000;
 }
 
 [data-theme='dark'] {
-  --sidebar-bg: #111111;
+  --sidebar-bg: #000;
   --sidebar-color: #ffffff;
-  --menu-item-hover: #333333;
-  --bg-gradient-start: rgba(63, 94, 251, 1);
-  --bg-gradient-end: rgba(252, 70, 107, 1);
-  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --menu-item-hover: #222222;
+  --bg-gradient-start: rgb(255, 255, 255);
+  --bg-gradient-end: rgb(200, 200, 200);
+  --box-shadow-color: rgba(0, 0, 0, 0.4);
   --footer-color: #ffffff;
 }
 
 body {
   background-color: var(--sidebar-bg);
   color: var(--sidebar-color);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s, color 0.5s;
 }

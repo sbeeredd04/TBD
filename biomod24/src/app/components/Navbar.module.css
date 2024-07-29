@@ -12,15 +12,16 @@
     display: flex;
     align-items: center;
     transition: width 1s !important;
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     overflow: hidden;
     margin-right: 20px;
   }
   
   .navbarContainer:hover {
     width: auto;
-    height: 48px;
+    height: 32px;
+    color: var(--sidebar-bg);
   }
   
   .navItems {
@@ -39,8 +40,9 @@
   }
   
   .navItem {
+    text-decoration: none;
     padding: 10px 20px;
-    color: var(--sidebar-color);
+    color: var(--sidebar-bg);
     cursor: pointer;
     white-space: nowrap;
     margin-left: 10px;
@@ -49,14 +51,15 @@
   .navItem:hover {
     background: var(--menu-item-hover);
     border-radius: 5px;
-    color: var(--sidebar-bg);
+    color: var(--sidebar-color);
   }
   
   .menuIcon {
     font-size: 24px;
     cursor: pointer;
-    color: var(--sidebar-color);
-    margin-left: 10px;
+    color: var(--sidebar-bg);
+    margin-top: 8px;
+    padding: 5px;
   }
   
   .icon {

@@ -29,7 +29,7 @@ const Sidebar = () => {
       </div>
       <div className={styles.menuItems}>
         <div className={styles.menuItem}>
-          <h1>Cargo Sorting Robot</h1>
+          <span><h2>Cargo Sorting Robot</h2></span>
         </div>
         <div className={styles.menuItem}>
           <FaRobot />
@@ -44,7 +44,9 @@ const Sidebar = () => {
         <div className={styles.themeToggle} onClick={toggleTheme}>
           {theme === 'light' ? <FaMoon /> : <FaSun />}
         </div>
-        BIOMOD
+        <div className={styles.footerText}>
+          BIOMOD 2024
+        </div>
       </div>
     </div>
   );

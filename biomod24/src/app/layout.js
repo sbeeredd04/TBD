@@ -15,10 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <Sidebar />
-      <Navbar />
         <main style={{ marginLeft: '80px', marginTop: '80px', transition: 'margin-left 0.3s' }}>  
-        
+        <Sidebar />
+        <Navbar />
         {children}
         </main>
       </body>

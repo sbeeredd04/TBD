@@ -4,8 +4,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 95%;
-    width: 50px;
+    height: 92%;
+    width: 32px;
     background: var(--sidebar-bg);
     transition: width 0.5s;
     display: flex;
@@ -22,14 +22,14 @@
   }
   
   .sidebarContainer:hover {
-    width: 200px;
+    width: 10%;
   }
   
   .menuIcon {
     margin: 20px;
     font-size: 24px;
     cursor: pointer;
-    color: var(--sidebar-color);
+    color: var(--sidebar-bg);
   }
   
   .menuItems {
@@ -39,6 +39,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
+    color: var(--sidebar-bg);
   }
   
   .menuItem {
@@ -46,7 +47,7 @@
     padding: 10px;
     display: flex;
     align-items: center;
-    color: var(--sidebar-color);
+    color: var(--sidebar-bg);
     cursor: pointer;
     justify-content: center;
     transition: justify-content 0.3s;
@@ -54,7 +55,9 @@
   
   .menuItem:hover {
     background: var(--menu-item-hover);
-    color: var(--sidebar-bg);
+    color: var(--sidebar-color);
+    border-radius: 16px;
+    padding: 10%;
   }
   
   .sidebarContainer:hover .menuItem {
@@ -69,10 +72,24 @@
   .sidebarContainer:hover .menuItem span {
     display: inline;
   }
+
+  .sidebarContainer:hover .footer {
+    display: block;
+    box-shadow: 5px 5px 20px var(--box-shadow-color);
+  }
   
   .footer {
-    font-size: 10px;
-    padding: 20px;
+    font-size: 1.2vh;
+    padding: 10% 40%;
+    color: var(--sidebar-bg);
+    text-align: center;
+    border-radius: 16px;
+    margin: 20px;
+    cursor: pointer;  
+  }
+
+  .footer:hover {
     color: var(--footer-color);
+    background-color: var(--sidebar-bg);
   }
   
