@@ -1,4 +1,3 @@
-npm install framer-motion
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 const HomePage = () => {
