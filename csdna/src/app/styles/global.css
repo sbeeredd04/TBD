@@ -1,0 +1,20 @@
+/* src/app/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply transition-colors duration-300 bg-gradient-to-b from-lightStart to-lightEnd text-black;
+}
+
+.dark body {
+  @apply bg-gradient-to-b from-darkStart to-darkEnd text-white;
+}
+
+.border-light {
+  @apply border-gray-200 shadow-light;
+}
+
+.dark .border-dark {
+  @apply border-gray-700 shadow-dark;
+}
