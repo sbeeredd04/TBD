@@ -9,7 +9,7 @@ export default function ProjectPage() {
   const navItems = [
     { name: "Home", link: "/" },
     { name: "Introduction", link: "/introduction" },
-    { name: "Projects", link: "/project" },
+    { name: "Projects", link: "/projects" },
     { name: "Experiments", link: "/experiments" },
     { name: "Results", link: "/results" },
     { name: "Team", link: "/team" },
